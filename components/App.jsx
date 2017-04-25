@@ -1,14 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-class Hello extends React.Component {
+class App extends React.Component {
   render() {
     return (
       <div>
-        <h1> Hello React </h1>
+        <h1> Photo Library App </h1>
       </div>
     );
   }
 }
 
-export default Hello;
+export default App;
