@@ -9,7 +9,7 @@ class Image extends React.Component {
   render() {
     return (
       <div className="col-md-6">
-        <h1>Image area here</h1>
+        <h3>Image area here</h3>
       </div>
     );
   }
