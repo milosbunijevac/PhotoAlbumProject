@@ -10,4 +10,3 @@ CREATE TABLE photos (
   url VARCHAR(255),
   PRIMARY KEY (id)
 );
-
