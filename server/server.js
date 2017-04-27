@@ -10,6 +10,7 @@ app.use(morgan('dev'));
 app.use(express.static(path.join(__dirname, '../')));
 app.use(express.static(path.join(__dirname, '../images/')));
 
+
 var port = process.env.PORT || 3000;
 
 app.get('/', function(req, res) {

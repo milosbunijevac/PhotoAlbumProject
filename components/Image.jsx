@@ -6,7 +6,7 @@ class Image extends React.Component {
   constructor(props) {
     super(props);
 
-    this.state = {image: 'static/images/mountain.png'};
+    this.state = {image: '/images/mountains.png'};
   }
 
   render() {

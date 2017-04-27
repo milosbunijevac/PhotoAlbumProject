@@ -9628,7 +9628,7 @@ var Image = function (_React$Component) {
 
     var _this = _possibleConstructorReturn(this, (Image.__proto__ || Object.getPrototypeOf(Image)).call(this, props));
 
-    _this.state = { image: 'static/images/mountain.png' };
+    _this.state = { image: '/images/mountains.png' };
     return _this;
   }
 
