@@ -240,6 +240,10 @@ process.off = noop;
 process.removeListener = noop;
 process.removeAllListeners = noop;
 process.emit = noop;
+process.prependListener = noop;
+process.prependOnceListener = noop;
+
+process.listeners = function (name) { return [] }
 
 process.binding = function (name) {
     throw new Error('process.binding is not supported');
@@ -9622,7 +9626,10 @@ var Image = function (_React$Component) {
   function Image(props) {
     _classCallCheck(this, Image);
 
-    return _possibleConstructorReturn(this, (Image.__proto__ || Object.getPrototypeOf(Image)).call(this, props));
+    var _this = _possibleConstructorReturn(this, (Image.__proto__ || Object.getPrototypeOf(Image)).call(this, props));
+
+    _this.state = { image: '../images/mountains.png' };
+    return _this;
   }
 
   _createClass(Image, [{
@@ -9635,7 +9642,8 @@ var Image = function (_React$Component) {
           'h3',
           null,
           'Image area here'
-        )
+        ),
+        _react2.default.createElement('img', { src: this.state.image })
       );
     }
   }]);
